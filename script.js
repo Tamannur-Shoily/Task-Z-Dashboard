@@ -338,7 +338,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Small event dots 
 
-      if (!isOutsideMonth && [1, 5, 12, 18, 24].includes(day)) {
+      if (!isOutsideMonth && [1, 5, 10, 12, 18, 24].includes(day)) {
         const marker = document.createElement("small");
         marker.textContent = day === 1 ? "" : "•";
         marker.style.color = sameDay(date, selectedDate)
@@ -387,7 +387,6 @@ document.addEventListener("DOMContentLoaded", () => {
   renderCalendar();
 
   // Keyboard shortcut: "/" focuses search 
-  
   document.addEventListener("keydown", (event) => {
     const tagName = document.activeElement?.tagName;
     const isTyping =
