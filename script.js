@@ -387,6 +387,7 @@ document.addEventListener("DOMContentLoaded", () => {
   renderCalendar();
 
   // Keyboard shortcut: "/" focuses search 
+  
   document.addEventListener("keydown", (event) => {
     const tagName = document.activeElement?.tagName;
     const isTyping =
